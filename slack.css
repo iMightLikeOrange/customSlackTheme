@@ -407,11 +407,12 @@ span.match {
 
 #member_mentions h3 a {
    color: var(--text-special);
+   background-color: var(--background) !important;
 }
 
 div.c-message.c-message--light.c-message--hover {
    color: var(--text) !important;
-	background-color: var(--background) !important;
+   background-color: var(--background) !important;
 }
 
 span.c-message__body,
@@ -471,7 +472,7 @@ a:hover{
 .channels_list_holder ul li .mpim_name,
 .channels_list_holder ul li>a:link,
 ts-message a.timestamp{
-  color: #aaa !important;
+  color: var(--text) !important;
 }
 #channels_scroller.show_which_channel_is_active ul li.active .im_name{
   color: #fff !important;
@@ -479,12 +480,12 @@ ts-message a.timestamp{
 
 #msgs_div .unread_divider.no_unreads .divider_label
 {
- background: #000 !important;
- color: #aaa !important;
+ background: var(--background) !important;
+ color: var(--text) !important;
 }
 
 #msgs_div .unread_divider.no_unreads hr{
-  border-top-color: #888 !important;
+  border-top-color: var(--border-bright) !important;
 }
 
 .flexpane_redesign #member_mentions {

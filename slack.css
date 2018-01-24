@@ -409,8 +409,23 @@ span.match {
    color: var(--text-special);
 }
 
-pre.special_formatting{
-  background: var(--background-elevated) !important;
+div.c-message.c-message--light.c-message--hover {
+   color: var(--text) !important;
+	background-color: var(--background) !important;
+}
+
+span.c-message__body,
+a.c-message__sender_link,
+span.c-message_attachment__media_trigger.c-message_attachment__media_trigger--caption,
+div.p-message_pane__foreword__description span {
+   color: var(--text) !important;
+}
+
+pre.special_formatting {
+  background-color: var(--background-elevated) !important;
+  color: var(--text-bright) !important;
+  border: solid;
+  border-width: 1px !important;
 }
 
 code {

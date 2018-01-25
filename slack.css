@@ -90,7 +90,8 @@ __TODO-highlight-indicator {
 ts-jumper input[type="text"],
 .supports_custom_scrollbar:not(.slim_scrollbar) #col_channels:hover #channels_scroller::-webkit-scrollbar-track,
 #channel_header_info, #channel_topic_text, #channel_topic_text code, #edit_topic_inner:before {
-  background: var(--background) !important;
+  background: var(--scrollbar-background) !important;
+  border: var(--scrollbar-border) !important;
 }
 
 .channel_header, #col_messages, #footer {
@@ -105,7 +106,8 @@ ts-jumper input[type="text"],
 }
 
 .p-channel_sidebar__channel a {
-  color: var(--text);
+  color: var(--scrollbar-background);
+  border: var(--scrollbar-border);
 }
 
 .p-channel_sidebar__static_list div {

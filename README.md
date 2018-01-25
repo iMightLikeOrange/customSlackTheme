@@ -6,7 +6,7 @@ Some thing I took the trouble to make an account for
 ```
 document.addEventListener('DOMContentLoaded', function() {
   $.ajax({
-   url: 'https://cdn.rawgit.com/iMightLikeOrange/customSlackTheme/e7c7ca55/slack.css',
+   url: 'https://cdn.rawgit.com/iMightLikeOrange/customSlackTheme/<commit number>/slack.css',
    success: function(css) {
      $("<style></style>").appendTo('head').html(css);
    }

@@ -42,8 +42,8 @@ h1, h2, h3, h4 {
 /*.TeamSidebar, .TeamSidebar .StoplightContainer, .TeamSidebar .TeamSidebar-addArea {*/
 /*nav.p-channel_sidebar {*/
 div.client_channels_list_container {
-   background-color: var(--background-elevated) !important;
-   box-shadow: var(--background-elevated) 1px 1px 25px;
+   background-color: var(--background) !important;
+   box-shadow: var(--background) 1px 1px 25px;
    color: var(--text);
    z-index: 1;
 }
@@ -56,7 +56,7 @@ nav.p-channel_sidebar {
 #team_menu,
 body:not(.loading) #team_menu:hover,
 body:not(.loading) #team_menu:active {
-   background-color: var(--background-elevated) !important;
+   background-color: var(--background) !important;
 }
 
 .p-channel_sidebar__channel,
@@ -176,8 +176,8 @@ li.active[class] span,
 .p-channel_sidebar__badge,
 .p-channel_sidebar__banner--mentions {
    /*inverted because important*/
-   background-color: var(--border-bright) !important;
-   border-color: var(--text-bright);
+   background-color: var(--background) !important;
+   border-color: var(--border-bright);
    color: var(--text-bright);
 }
 
@@ -188,7 +188,7 @@ li.active[class] span,
 
 /* new scrollbar */
 .p-channel_sidebar div.c-custom_scrollbar__thumb_vertical, .p-channel_sidebar div.c-scrollbar__bar {
-  background: var(--scrollbar-border);
+  background: var(--scrollbar-background);
   border: 1px solid var(--scrollbar-border);
 }
 
@@ -219,7 +219,7 @@ ts-jumper input[type="text"]::-webkit-input-placeholder {
 }
 
 #msg_input, #primary_file_button {
-  background: transparent !important;
+  background: var(--background) !important;
   color: var(--text) !important;
   border-color: var(--border-dim) !important;
 }
@@ -408,7 +408,7 @@ span.match {
 }
 
 #member_mentions h3 a {
-   color: var(--text-special);
+   color: var(--text-bright);
    background-color: var(--background) !important;
 }
 
@@ -476,7 +476,7 @@ ts-message a.timestamp{
   color: var(--text) !important;
 }
 #channels_scroller.show_which_channel_is_active ul li.active .im_name{
-  color: #fff !important;
+  color: var(--text-bright) !important;
 }
 
 #msgs_div .unread_divider.no_unreads .divider_label
@@ -792,7 +792,7 @@ ts-thread .view_all_replies_container:hover {
 
 .section_rollup:hover:not(.is_active) {
    background: var(--background-hover);
-   color: inherit;
+   color: var(--text);
 }
 
 #fs_modal #fs_modal_sidebar a {
@@ -846,17 +846,17 @@ div::-webkit-scrollbar-track {
 div::-webkit-scrollbar-thumb {
    color: transparent !important;
    border: 1px solid var(--scrollbar-border) !important;
-   background-color: transparent !important;
+   background-color: var(--scrollbar-background) !important;
 }
 
 #threads_msgs_scroller_div:not(.loading):before {
-   background: none;
+   background: var(--scrollbar-background);
 }
 
 /* thread side panel */
 
 #mentions_scroller {
-   background: var(--background) !important;
+   background: var(--scrollbar-background) !important;
    color: var(--text) !important;
 }
 
@@ -864,8 +864,8 @@ div::-webkit-scrollbar-thumb {
 /* global (left sidebar) */
 
 #channel_scroll_down, #channel_scroll_up {
-   background-color: var(--background) !important;
-   border: 0 1px 1px 1px solid var(--border-bright) !important;
+   background-color: var(--scrollbar-background) !important;
+   border: 0 1px 1px 1px solid var(--scrollbar-border) !important;
 }
 
 #team_menu, #quick_switcher_btn, #team_menu_overlay, #col_channels_overlay {

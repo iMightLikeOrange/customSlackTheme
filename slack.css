@@ -844,7 +844,7 @@ div::-webkit-scrollbar-track {
   display: none !important;
 }
 div::-webkit-scrollbar-thumb {
-   color: transparent !important;
+   color: var(--scrollbar-background) !important;
    border: 1px solid var(--scrollbar-border) !important;
    background-color: var(--scrollbar-background) !important;
 }
@@ -857,7 +857,7 @@ div::-webkit-scrollbar-thumb {
 
 #mentions_scroller {
    background: var(--scrollbar-background) !important;
-   color: var(--text) !important;
+   border: 1px solid var(—scrollbar-border) !important;
 }
 
 
